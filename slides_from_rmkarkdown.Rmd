@@ -1,0 +1,68 @@
+---
+title: "Creating Slides From Markdown"
+author: "neilsequeira"
+date: "Jan 02, 2022"
+output: 
+    ioslides_presentation: 
+      widescreen: yes
+      incremental: yes
+      logo: logo.jpeg
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Begin with Why \| aka Why Am I Learning this? {.build}
+
+> I write everyday in various text editors - Wordpress for my blog, a physical book for my journal, VSCode or RStudio for code.
+
+> Communicating requires both **writing**, and **presenting**, which I have to do often.
+
+> Is there a way of combining my writing and presentation into a single document that serves both purposes?
+
+> Rmarkdown apparently offers such a solution, so I'm going to invest an hour understanding it's out-of-the box capabilities.
+
+## How am I learning this? \| aka Resources for learning
+
+I often watch hours of YouTube videos and then get distracted. For this exercise though I'm documenting how I'm going about it as I do it.
+
+Hyphens create a bulleted list, very handy
+
+-   YiHui online book 'bookdown' <https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html>
+-   read it
+-   use it here.
+
+## First few features
+
+-   bulleted lists
+-   `##`creates the headline
+-   `|` creates a sub-heading
+-   YAML header allows customisations (adding `incremental: true`), watch the indentations
+-   adding `>` before `-` allows building incrementally on some slides and not on others!
+
+## More Features {.smaller}
+
+> -   YAML `smaller: true` makes all text smaller
+>
+> -   \`{.smaller} is more targeted, like on this slide title
+>
+> -   `transition:` options are "default", "slower", "faster" or numeric in seconds 0.5
+
+## Slide Build \| transitions
+
+> -   <div>
+>
+>     > Slides can have a `{.build}` attribute that indicates their content should be displayed incrementally.
+>
+>     </div>
+>
+>     <div>
+>
+>         Slide Build {.build}
+>
+>     </div>
+>
+> -   Slide attributes can be combined if you need to specify more than one
+>
+>         Slide Build {.build .smaller}

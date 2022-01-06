@@ -129,29 +129,27 @@ slide:not(.current) .plotly.html-widget{
           </hgroup>
   </slide>
 
-<slide class=""><hgroup><h2>Begin with Why </h2><h3> aka Why Am I Learning this?</h3></hgroup><article  id="begin-with-why-aka-why-am-i-learning-this" class="build">
+<slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>The Why</h2></hgroup><article  id="the-why">
 
-<blockquote>
+<p>aka Begin with Why</p>
+
+</article></slide><slide class=""><hgroup><h2>Why </h2><h3> aka Why Am I Learning this?</h3></hgroup><article  class="build" id="why-aka-why-am-i-learning-this">
+
 <p>I write everyday in various text editors - Wordpress for my blog, a physical book for my journal, VSCode or RStudio for code.</p>
-</blockquote>
 
-<blockquote>
 <p>Communicating requires both <strong>writing</strong>, and <strong>presenting</strong>, which I have to do often.</p>
-</blockquote>
 
-<blockquote>
 <p>Is there a way of combining my writing and presentation into a single document that serves both purposes?</p>
-</blockquote>
 
-<blockquote>
 <p>Rmarkdown apparently offers such a solution, so I’m going to invest an hour understanding it’s out-of-the box capabilities.</p>
-</blockquote>
 
 </article></slide><slide class=""><hgroup><h2>How am I learning this? </h2><h3> aka Resources for learning</h3></hgroup><article  id="how-am-i-learning-this-aka-resources-for-learning">
 
-<p>I often watch hours of YouTube videos and then get distracted. For this exercise though I’m documenting how I’m going about it as I do it.</p>
+<ul>
+<li>I often watch hours of YouTube videos and then get distracted. For this exercise, I’m documenting how I’m going about it as I do it.</li>
+</ul>
 
-<p>Hyphens create a bulleted list, very handy</p>
+<p><del>Hyphens create a bulleted list, very handy</del></p>
 
 <ul class = 'build'>
 <li>YiHui online book &lsquo;bookdown&rsquo; <a href='https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html' title=''>https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html</a></li>
@@ -159,17 +157,18 @@ slide:not(.current) .plotly.html-widget{
 <li>use it here.</li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>First few features</h2></hgroup><article  id="first-few-features">
+</article></slide><slide class=""><hgroup><h2>First few syntaxes</h2></hgroup><article  id="first-few-syntaxes">
 
 <ul class = 'build'>
-<li>bulleted lists</li>
-<li><code>##</code>creates the headline</li>
-<li><code>|</code> creates a sub-heading</li>
-<li>YAML header allows customisations (adding <code>incremental: true</code>), watch the indentations</li>
-<li>adding <code>&gt;</code> before <code>-</code> allows building incrementally on some slides and not on others!</li>
+<li><code>#</code> to create new section section<br/></li>
+<li><code>##</code>to creates the headline</li>
+<li><code>|</code> to creates a sub-heading</li>
+<li><code>-</code> to create bullet lists</li>
+<li>YAML header allows customisations (for ex <code>incremental: true</code> to animate each &lsquo;block&rsquo;)</li>
+<li><code>&gt;</code> before <code>-</code> allows building incrementally on some slides and not on others</li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>More Features</h2></hgroup><article  id="more-features" class="smaller">
+</article></slide><slide class=""><hgroup><h2>More Features</h2></hgroup><article  class="smaller" id="more-features">
 
 <ul>
 <li><p>YAML <code>smaller: true</code> makes all text smaller</p></li>
@@ -177,20 +176,37 @@ slide:not(.current) .plotly.html-widget{
 <li><p><code>transition:</code> options are &ldquo;default&rdquo;, &ldquo;slower&rdquo;, &ldquo;faster&rdquo; or numeric in seconds 0.5</p></li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Slide Build </h2><h3> transitions</h3></hgroup><article  id="slide-build-transitions">
+</article></slide><slide class=""><hgroup><h2>Slide Build </h2><h3> transitions</h3></hgroup><article  class="build" id="slide-build-transitions">
 
-<ul>
-<li><div>
 <blockquote>
 <p>Slides can have a <code>{.build}</code> attribute that indicates their content should be displayed incrementally.</p>
-</blockquote></div>
+</blockquote>
 
-<div>
-<pre >Slide Build {.build}</pre></div></li>
-<li><p>Slide attributes can be combined if you need to specify more than one</p>
+<blockquote>
+<p><code>Slide Build {.build}</code></p>
+</blockquote>
 
-<pre >Slide Build {.build .smaller}</pre></li>
-</ul></article></slide>
+<blockquote>
+<p>Slide attributes can be combined if you need to specify more than one</p>
+</blockquote>
+
+<blockquote>
+<p><code>Slide Build {.build .smaller}</code></p>
+</blockquote>
+
+</article></slide><slide class=""><hgroup><h2>Problems</h2></hgroup><article  id="problems">
+
+<p>I’ve discovered the big challenge of using ioslides already!</p>
+
+<ul>
+<li>Not very customisable, unless I learn LOTS OF HTML/CSS/JS!</li>
+</ul>
+
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>An alternative from Yihui Xie: Xaringan</h2></hgroup><article  id="an-alternative-from-yihui-xie-xaringan">
+
+</article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
+
+<p>I’m going to create a new Rmd with Xaringan and start exploring there.</p></article></slide>
 
 
   <slide class="backdrop"></slide>

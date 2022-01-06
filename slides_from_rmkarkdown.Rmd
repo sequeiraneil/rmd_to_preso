@@ -13,33 +13,38 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Begin with Why \| aka Why Am I Learning this? {.build}
+# The Why
+aka Begin with Why
 
-> I write everyday in various text editors - Wordpress for my blog, a physical book for my journal, VSCode or RStudio for code.
+## Why \| aka Why Am I Learning this? {.build}
 
-> Communicating requires both **writing**, and **presenting**, which I have to do often.
+I write everyday in various text editors - Wordpress for my blog, a physical book for my journal, VSCode or RStudio for code.
 
-> Is there a way of combining my writing and presentation into a single document that serves both purposes?
+Communicating requires both **writing**, and **presenting**, which I have to do often.
 
-> Rmarkdown apparently offers such a solution, so I'm going to invest an hour understanding it's out-of-the box capabilities.
+Is there a way of combining my writing and presentation into a single document that serves both purposes?
+
+Rmarkdown apparently offers such a solution, so I'm going to invest an hour understanding it's out-of-the box capabilities.
+
 
 ## How am I learning this? \| aka Resources for learning
 
-I often watch hours of YouTube videos and then get distracted. For this exercise though I'm documenting how I'm going about it as I do it.
+> - I often watch hours of YouTube videos and then get distracted. For this exercise, I'm documenting how I'm going about it as I do it.
 
-Hyphens create a bulleted list, very handy
+~~Hyphens create a bulleted list, very handy~~
 
 -   YiHui online book 'bookdown' <https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html>
 -   read it
 -   use it here.
 
-## First few features
+## First few syntaxes
 
--   bulleted lists
--   `##`creates the headline
--   `|` creates a sub-heading
--   YAML header allows customisations (adding `incremental: true`), watch the indentations
--   adding `>` before `-` allows building incrementally on some slides and not on others!
+-   `#` to create new section section  
+-   `##`to creates the headline
+-   `|` to creates a sub-heading
+-   `-` to create bullet lists 
+-   YAML header allows customisations (for ex `incremental: true` to animate each 'block')
+-   `>` before `-` allows building incrementally on some slides and not on others
 
 ## More Features {.smaller}
 
@@ -49,20 +54,25 @@ Hyphens create a bulleted list, very handy
 >
 > -   `transition:` options are "default", "slower", "faster" or numeric in seconds 0.5
 
-## Slide Build \| transitions
+## Slide Build \| transitions {.build}
 
-> -   <div>
->
->     > Slides can have a `{.build}` attribute that indicates their content should be displayed incrementally.
->
->     </div>
->
->     <div>
->
->         Slide Build {.build}
->
->     </div>
->
-> -   Slide attributes can be combined if you need to specify more than one
->
->         Slide Build {.build .smaller}
+> Slides can have a `{.build}` attribute that indicates their content should be displayed incrementally.
+
+> `Slide Build {.build}`
+
+>  Slide attributes can be combined if you need to specify more than one
+
+>  `Slide Build {.build .smaller}`
+
+
+## Problems
+
+I've discovered the big challenge of using ioslides already!
+
+> - Not very customisable, unless I learn LOTS OF HTML/CSS/JS!
+
+
+# An alternative from Yihui Xie: Xaringan
+
+---
+I'm going to create a new Rmd with Xaringan and start exploring there.

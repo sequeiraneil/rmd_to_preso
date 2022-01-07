@@ -33,17 +33,20 @@ class: inverse, center, middle
 
 # Communication > Writing
 
---
-
-There's a **huge** need to improve the way I communicate
 
 --
 
-I'm keen to add another skill to PPT, and integrate them into my writing workflow
+.center[There's a **huge** need to improve the way I communicate]
 
 --
 
-[RStudio IDE](https://www.rstudio.com/products/rstudio/) is a tool I'm familiar with and has some great features I can build this skill on.
+.center[I'm keen to add another skill to PPT, and integrate them into my writing workflow]
+
+--
+
+.center[[RStudio IDE](https://www.rstudio.com/products/rstudio/) is a tool I'm familiar with and has some great features I can build this skill on.]
+
+
 
 ---
 background-image: url(`r xaringan:::karl`)
@@ -77,7 +80,32 @@ Yihui Xie is a prolific developer on the RStudio platform, building incredibly u
 
 His `xaringan` pronounced sha-rin-gan package... 
 
--- 
+---
+
+# Embedding Pictures and videos
+
+
+.pull-left[![doggo](https://images-na.ssl-images-amazon.com/images/G/01/img15/pet-products/small-tiles/23695_pets_vertical_store_dogs_small_tile_8._CB312176604_.jpg)]
+
+--
+> `.pull-left[]` is the function to use to align the picture in a left column
+
+
+
+--
+
+> `[![doggo](image_url)]` is the function to use to embed the picture
+
+--
+
+.pull-right[<iframe width="560" height="315" src="https://youtu.be/FHy6NseH8yk" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>]
+
+--
+> `.pull-right[]` is the function to use to align the picture in a left column
+
+
+--
+> `[![doggo](image_url)]` is the function to use to embed the picture
 
 
 ---

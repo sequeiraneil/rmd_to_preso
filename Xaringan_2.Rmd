@@ -1,0 +1,111 @@
+---
+title: "remark.js formatting"
+subtitle: "br/>with xaringan"
+author: "all hail Yihui Xie"
+
+date: "(updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    self-contained: true
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)
+
+
+---
+
+# Alignment
+
+The `class` slide property lets you assign CSS classes to slides, and remark comes with a set of classes for setting **horizontal and vertical text alignments**
+
+`class: middle, center`
+
+center vertically and horizontally, as seen in the next slide
+
+---
+class: middle, center
+
+# Alignment
+
+The alternatives available for vertical alignment: 
+
+- top
+- middle
+- bottom
+
+(and I don't like how the bullets are left aligned)
+
+
+---
+class: right
+
+# Horizontal Alignment
+The classes available for horizontal alignment:
+
+- left
+- center
+- right
+
+(again, the bullets are aligned on the left)
+
+
+---
+
+# Content Classes
+
+WTF is that? 
+
+Content classes let you assign CSS classes to a text block, and remark comes with a set of classes for setting horizontal text alignment
+
+For example below, the text block of 3 bullet points is nested inside a `.pull-right[]` content class
+
+.pull-right[
+- point 1
+- point 2
+- point 3
+]
+
+
+
+---
+
+# Images
+
+Regular images are inserted using normal Markdown image syntax, and are treated like regular content that can be placed inside content classes, e.g. to be aligned:
+
+
+- An exclamation mark: !;
+- followed by a set of square brackets, containing the alt attribute text for the image;
+- followed by a set of parentheses, containing the URL or path to the image, and an optional title attribute enclosed in double or single quotes.
+
+![This image](https://images-na.ssl-images-amazon.com/images/G/01/img15/pet-products/small-tiles/23695_pets_vertical_store_dogs_small_tile_8._CB312176604_.jpg)
+
+---
+background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/img15/pet-products/small-tiles/23695_pets_vertical_store_dogs_small_tile_8._CB312176604_.jpg)
+
+# Background Images
+
+The `background-image` slide property lets you set the background-image CSS property for the slide.
+
+The background image will by default be centered both horizontally and vertically on the slide, and scaled down to fit if it is larger than the slide.
+
+
+---
+class: middle, center
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2cb-iL1sj9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+# Video
+
+There are multiple ways to include embedded video within a Remark presentation. Embed code from YouTube or others sites work as is:
+
+`class: middle, center`
+
+`<iframe width="560" height="315" src="https://www.youtube.com/embed/2cb-iL1sj9E" title="YouTube video player" frameborder="0" allowfullscreen></iframe>`
+

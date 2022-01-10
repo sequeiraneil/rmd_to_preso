@@ -62,20 +62,25 @@ WTF is that?
 
 Content classes let you assign CSS classes to a text block, and remark comes with a set of classes for setting horizontal text alignment
 
-For example below, the text block of 3 bullet points is nested inside a `.pull-right[]` content class
+For example below, the text block of 3 bullet points is nested inside a `.pull-left[]` and `.pull-right[]` content class. Must be done in that order!
 
-.pull-right[
+.pull-left[
 - point 4
+
 - Not exactly what I was thinking but useful alignment, particularly if the sentences are really long
+
 - point 6
 ]
 
-I tried to do this so I had two columns, but doesn't seem to work that easily?
 
-.pull-left[
-- point 1
-- point 2
-- point 3
+.pull-right[
+
+1. point 1
+
+1. point 2
+
+1. point 3
+
 ]
 
 ---

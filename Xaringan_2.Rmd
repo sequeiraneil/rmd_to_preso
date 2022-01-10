@@ -1,6 +1,6 @@
 ---
 title: "remark.js formatting"
-subtitle: "br/>with xaringan"
+subtitle: "<br/>with xaringan"
 author: "all hail Yihui Xie"
 
 date: "(updated: `r Sys.Date()`)"
@@ -38,7 +38,7 @@ The alternatives available for vertical alignment:
 - middle
 - bottom
 
-(and I don't like how the bullets are left aligned)
+(and I don't like how the bullets are aligned)
 
 
 ---
@@ -51,7 +51,7 @@ The classes available for horizontal alignment:
 - center
 - right
 
-(again, the bullets are aligned on the left)
+(again, the way bullets are aligned is annoying me)
 
 
 ---
@@ -65,12 +65,18 @@ Content classes let you assign CSS classes to a text block, and remark comes wit
 For example below, the text block of 3 bullet points is nested inside a `.pull-right[]` content class
 
 .pull-right[
+- point 4
+- Not exactly what I was thinking but useful alignment, particularly if the sentences are really long
+- point 6
+]
+
+I tried to do this so I had two columns, but doesn't seem to work that easily?
+
+.pull-left[
 - point 1
 - point 2
 - point 3
 ]
-
-
 
 ---
 

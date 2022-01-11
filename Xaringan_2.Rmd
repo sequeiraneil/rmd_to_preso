@@ -196,3 +196,48 @@ To leave a comment in the markdown but not render in the slides, two options ava
 
 ```
 
+
+---
+
+# Slide Properties
+
+Initial lines of a slide on a key-value format will be extracted as slide properties.
+
+## `name` property
+
+The `name` property accepts a name to be used to identify the current slide
+
+`name: agenda`
+
+Two simple uses 
+
+a. is to link to a slide using a URL fragment `slideshow.html#agenda`
+
+b. Reference slide  when using the `template` slide property
+
+---
+
+# `Class` property
+
+The class property accepts a comma-separated list of class names, which are applied to the current slide
+
+```{r eval=FALSE}
+class: center, middle
+
+# Slide with content centered in both dimensions
+```
+
+Built-in slide classes include `left`, `center`, `right`, `top`, `middle` and `bottom`, which may be used to align entire slides.
+
+---
+
+# `background-image` property
+
+The `background-image` property maps directly to the background-image CSS property, which are applied to the current slide:
+
+```{r eval=FALSE}
+background-image: url(image.jpg)
+
+# Slide with background image
+```
+

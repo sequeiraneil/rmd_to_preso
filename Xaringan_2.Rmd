@@ -241,3 +241,26 @@ background-image: url(image.jpg)
 # Slide with background image
 ```
 
+Other slide background CSS properties defined in the default remark styles:
+
+```{r eval=FALSE}
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;      
+/* applied using JavaScript only if background-image is larger than slide */
+```
+
+---
+
+# `count` property
+
+The count property allows for specific slides **NOT** to be included in the slide count, which is by default displayed in the lower right corner of the slideshow:
+
+```{r eval=FALSE}
+count: false
+
+This slide will not be counted
+```
+
+
+When the `countIncrementalSlides` configuration option is enabled, all incremental slides will automatically have the `count: false` slide property set.

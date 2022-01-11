@@ -120,3 +120,27 @@ There are multiple ways to include embedded video within a Remark presentation. 
 
 `<iframe width="560" height="315" src="https://www.youtube.com/embed/2cb-iL1sj9E" title="YouTube video player" frameborder="0" allowfullscreen></iframe>`
 
+
+---
+# Slide Basics
+
+## Slide Separators
+
+A line containing three dashes, represents a slide separator
+`---`
+
+## Slide Incrementors
+
+.pull-left[A line containing two dashes allows avoiding having to duplicate content if a slide is going to add to the previous one. (inherits content of the previous slide)
+
+```{r eval = FALSE}
+# Slide
+
+- bullet 1
+--
+
+- bullet 2
+```
+]
+
+.pull-right[Empty lines before and after the two dashes are of significance as the preceding newline character is omitted to enable adding to the last line of the previous slide. Thus, as the extra bullet point in the above example needs to go on a separate line, an extra line is added after the two dashes to force a newline. Without the extra line, the resulting text would have been - bullet 1- bullet 2.]

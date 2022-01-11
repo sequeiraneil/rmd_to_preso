@@ -151,7 +151,7 @@ A line containing three dashes, represents a slide separator
 
 A line containing 3 question marks (???) represents a separator of content from notes on the slide
 
-```{r eval = False}
+```{r eval = FALSE}
 # Slide
 
 Some content
@@ -164,13 +164,35 @@ A notes open version of a slide show can be shared by sharing the url with #p1 a
 
 With Incremental Slides the notes go after each increment
 
-```{r eval = False}
-Hello
+```{r eval = FALSE}
+# Hello
+
 ???
-notes for hello
+# notes for hello
+
 --
-World
+# World
+
 ???
 notes for world
+```
+
+---
+
+# Comments
+
+To leave a comment in the markdown but not render in the slides, two options available:
+
+1. HTML, visible in page source
+```{r eval = FALSE}
+<!-- 
+    This is a comment.
+-->
+```
+
+1. Empty Link
+```{r eval = FALSE}
+[//]: #(This is a comment too)
+
 ```
 

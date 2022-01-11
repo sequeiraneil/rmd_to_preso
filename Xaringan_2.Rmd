@@ -144,3 +144,33 @@ A line containing three dashes, represents a slide separator
 ]
 
 .pull-right[Empty lines before and after the two dashes are of significance as the preceding newline character is omitted to enable adding to the last line of the previous slide. Thus, as the extra bullet point in the above example needs to go on a separate line, an extra line is added after the two dashes to force a newline. Without the extra line, the resulting text would have been - bullet 1- bullet 2.]
+
+---
+
+# Slide Notes
+
+A line containing 3 question marks (???) represents a separator of content from notes on the slide
+
+```{r eval = False}
+# Slide
+
+Some content
+
+???
+Some note
+```
+
+A notes open version of a slide show can be shared by sharing the url with #p1 appended. Such as remarkjs.com/#p1.
+
+With Incremental Slides the notes go after each increment
+
+```{r eval = False}
+Hello
+???
+notes for hello
+--
+World
+???
+notes for world
+```
+

@@ -264,3 +264,30 @@ This slide will not be counted
 
 
 When the `countIncrementalSlides` configuration option is enabled, all incremental slides will automatically have the `count: false` slide property set.
+
+
+---
+
+# `template` property
+
+The `template` property names another slide to be used as a template for the current slide
+
+```{r eval=FALSE}
+name: other-slide
+
+Some content.
+
+---
+template: other-slide
+
+# Content appended to the other slide's content.
+
+```
+
+Both template slide contents and properties are prepended to the current slide, with the following exceptions:
+
+* `name` and `layout` properties are not inherited
+
+* `class` properties are merged, preserving class order
+
+Template slides may also contain a special {{content}} expression to explicitly position the content of derived slides, instead of having it implicitly appended.

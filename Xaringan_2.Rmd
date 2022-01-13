@@ -314,3 +314,29 @@ When set to `false`, reverts to using no default template.
 
 Multiple layout slides may be used throughout the slideshow to define a common template for a series of slides. 
 
+---
+
+# `exclude` property
+
+this hides a slide when set to `true`, it's a way to hide out a slide so it's not rendered in the presentation.
+
+---
+
+# Content classes
+
+Any occurrence of one or more dotted CSS class names followed by square brackets are replaced with the contents of the brackets with the specified classes, as <span> tags applied:
+
+```{r eval = FALSE}
+.footnote[.red.bold[*] Important footnote]
+
+```
+
+To have `div<>` tags instead, separate your content on new lines:
+
+```{r eval = FALSE}
+.footnote[
+.red.bold[
+    *]Important Footnote]
+
+```
+
